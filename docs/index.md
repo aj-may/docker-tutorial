@@ -3,7 +3,7 @@
 Some intro.
 
 ![Running Wordpress with docker](images/docker-wordpress.gif)
-Wordpress and MySQL up and running on docker in <2 minutes.
+_Wordpress and MySQL up and running on docker in <2 minutes._
 
 ## Table of Contents
 
