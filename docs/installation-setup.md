@@ -1,2 +1,13 @@
-* install docker for mac
-* install docker-proxy and run it
+# Installation & Setup
+
+## Installing Docker for Mac
+
+
+## Testing your Docker installation
+
+
+## Running a Webserver
+
+
+## Using `docker-proxy`
+
