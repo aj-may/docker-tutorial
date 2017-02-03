@@ -1,3 +1,4 @@
 theme: jekyll-theme-cayman
 title: Docker Tutorial
+tagline: A quick tutorial to get you up and running on docker
 baseurl: /docker-tutorial
