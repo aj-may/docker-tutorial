@@ -1,6 +1,6 @@
 ## Some intro heading
 
-Some intro.
+Some intro about what docker is and why it is awesome.
 
 ![Running Wordpress with docker](images/docker-wordpress.gif)
 _Wordpress and MySQL up and running in <2 Minutes with Docker._
