@@ -12,4 +12,4 @@
 ## Using `docker-proxy`
 
 
-Continue to [Docker CLI](docker-cli) &rarr;
+Continue to [Docker CLI &rarr;](docker-cli)

@@ -1,4 +1,4 @@
 # Docker CLI
 
 
-Continue to [Docker Compose](docker-compose) &rarr;
+Continue to [Docker Compose &rarr;](docker-compose)
