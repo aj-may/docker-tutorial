@@ -59,6 +59,23 @@ hello-world                     latest              48b5124b2768        3 weeks 
 
 ## Running a Web Server
 
+Now that we figured out how to pull and run an image, let's run a web server and hit it from our browser.  To keep this example simple, let's use the official `nginx` image (<https://hub.docker.com/_/nginx/>).
+
+Here's the command: `docker run -p 8080:80 -d nginx`
+
+Let me explain what these new flags are.  The `-p` flag, as you may have guessed, binds a container port to your host machines port.  In the example above we are binding our local port `8080` to port `80` inside the container.  The `-d` flag stands for daemonize.  This flag just forces the container to run in the background.
+
+Since we daemonized this container the only output we should see is the image being pulled.  Once that is complete, we can check to see the container is running with the `docker ps` command.
+
+```
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                           NAMES
+6490b43f85ee        nginx               "nginx -g 'daemon ..."   About an hour ago   Up 3 seconds        443/tcp, 0.0.0.0:8080->80/tcp   hardcore_curie
+```
+
+As we can see the `STATUS` of the container is `Up`.  Let's see if we can hit it in our browser.  <http://localhost:8080>
+
+![Welcome to Nginx](images/welcome-to-nginx.png)
 
 ## Using `docker-proxy`
 
