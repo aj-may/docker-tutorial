@@ -79,5 +79,31 @@ As we can see the `STATUS` of the container is `Up`.  Let's see if we can hit it
 
 ## Using `docker-proxy`
 
+Already it should be apparent that docker could be a super time saver for developers, but this is just the surface.  Just wait till we get to Docker Compose.  Before we move on, however, let's setup one more thing.
+
+Binding ports in docker, as you saw, is very simple, however it can become hard to manage when your project contains several apps, and then harder when you need to run several different projects.  Each port can only be bound to one container, so port collisions are a problem.  To avoid this problem we can let docker choose a random unused port for us, but then we need to query for the port often.  The way I manage it is with [codekitchen](https://github.com/codekitchen)'s http-proxy image.  The container runs a dns server and an http proxy to route hostnames to the proper container.  Let's just set it up for now and I'll show you an example later.
+
+I created a simple shell script to help manage the process <https://github.com/aj-may/docker-proxy>.  I recommend following that URL and reading the docs.  To install, simply run the command below:
+
+```
+(cd /usr/local/bin; curl -sL https://raw.githubusercontent.com/aj-may/docker-proxy/master/install.sh | sudo bash)
+```
+
+Once installed you can run the script with `docker-proxy`.  Without providing any arguments it will just spit out the usage information.
+
+```
+$ docker-proxy
+
+docker-proxy 1.0.0.
+
+Usage:
+  docker-proxy status      Prints the status of the docker proxy.
+  docker-proxy start       Starts the docker proxy.
+  docker-proxy stop        Stops the docker proxy.
+  docker-proxy restart     Restarts the docker proxy.
+  docker-proxy update      Pulls the latest image for the docker proxy container.
+  docker-proxy help        Show this message.
+  docker-proxy version     Print the version number.
+```
 
 Continue to [Docker CLI &rarr;](docker-cli)
