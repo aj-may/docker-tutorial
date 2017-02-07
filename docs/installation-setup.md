@@ -4,7 +4,7 @@
 
 Installing Docker on a mac couldn't be easier. Go to <https://docs.docker.com/docker-for-mac/> and click on the download button pictured below.
 
-![Docker for macOS download page](images/download-docker-mac.png)
+<img src="images/download-docker-mac.png" alt="Docker for macOS download page" width="300" />
 
 Open the installer and follow the prompts.  Once complete you should see the docker 🐳 in your menu bar.
 
